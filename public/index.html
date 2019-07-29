@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Márquez Coffee</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/carga.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--Icono de la pestaña-->
+	<link rel="icon" href="img/Marca-de-café.png">
+	<!--Fuente de google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<!--Iconos-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+
+<style>
+	body{
+	width:100%;
+	height:100%;
+	
+}
+
+#contact{
+	background-color: #f1f1f1;;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+textarea.formulario-control{
+    height:100px;
+}
+</style>
+
+
+</head>
+<body style="background-color: #f1f1f1;">
+
+<!--Aniamción inicial-->
+<div id="contenedor_carga">
+		<div id="carga">
+			
+		</div>
+</div>
+<!-- Fin Aniamción inicial-->
+
+<div class="header">
+  <div class="contenedor">
+  	<div class="centro">
+  		<div class="col-md-12">
+  			  <p><img src="img/cenicafe2.jpg" alt="Nature" class="responsive"></p>
+  		</div>
+  	</div>
+  </div>
+
+</div>
+
+<!-- Menú de navegacion  -->
+
+<nav id="navbar" class="navbar barra-expandir bg">
+		  	<a class="barra-marca" title="cafe.com" href="index.html" ><img src="img/Marca-de-café.png" width="44" height="44"></a>
+		  <button class="barra-palanca" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="barra-palanca-icon"></span>
+		  </button>
+
+		  <div class="collapse navegacion-colapso" id="navbarSupportedContent">
+		    <ul class="barra-navegacion mr-auto">
+		      <li>
+		        <a class="link-navegacion" href="QuienesSomos.html">¿Quiénes somos?</a>
+		      </li>
+		      <li>
+		        <a class="link-navegacion" href="Productos.html">Productos</a>
+		      </li>	      
+		      <li>
+		        <a class="link-navegacion" href="Distribuidor.html">Distribuidor</a>
+		      </li>
+		      <li>
+		        <a class="link-navegacion" href="Reservacion.html">Reservaciones</a>
+		      </li>
+		      <li>
+		        <a class="link-navegacion" href="Galeria.html">Galeria</a>
+		      </li>
+				<li>
+		        <a class="link-navegacion" href="Clientes.html">Clientes</a>
+		      </li>
+		      <li>
+		        <a class="link-navegacion" href="404.html">Login</a>
+		      </li>
+		    </ul>
+		  </div>
+	</nav>
+
+
+
+	<div style="margin-top: 30px;"></div>
+
+	<div class="contenedor">
+		<div class="centro">
+			<div class="col-md-4">
+			
+			</div>
+			
+			<div class="col-md-4" style="text-align: center; font-family: Merriweather;">
+				<button onclick="typeWriter()" type="button" class="leer" style="margin-bottom: 10px;">Bienvenido</button>
+			<p id="bienvenido"></p>
+			<br>
+			<p id="bienvenido2"></p>
+			</div>
+	
+			<div class="col-md-4">
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<div style="margin-top: 0px;"></div>
+
+<!-- 
+ -->
+
+<div style="margin-top: 0px;"></div>
+<div class="contenedor" style="margin-top: 80px;">
+	<div class="centro">
+		<div class="col-md-12">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="d-block w-100" id="opacidad" src="img/Coffe.jpg" alt="First slide" alt="Nature">
+								      <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.7);">
+									    <h4>Insumos</h4>
+									    <p class="letrasSlide">Insumos agrícolas, beneficios húmedos y exportación de café.</p>
+									  </div>
+						    </div>
+							</div>
+						</div>
+		</div>
+	</div>
+</div>
+
+<!-- Logos de todas las redes sociales -->
+<div class="contenedor">
+	<div class="centro">
+		<div class="col-md-8">
+				<a href="https://www.facebook.com/" target="_blank" title="Ir a facebook." class="fab fa-facebook-f"></a>
+				<a href="https://twitter.com/?lang=es" target="_blank" title="Ir a twitter." class="fab fa-twitter"></a>
+				<a href="https://www.google.com/gmail/" target="_blank" title="Ir a gmail." class="fab fa-google"></a>
+				<a href="https://www.youtube.com/" target="_blank" title="Ir a youtube." class="fab fa-youtube"></a>
+				<a href="https://www.instagram.com/" target="_blank" title="Ir a instagram." class="fab fa-instagram"></a>
+				<a href="https://www.skype.com/es/" target="_blank" title="Ir a skype." class="fab fa-skype"></a>
+				
+
+		</div>
+		<div class="col-md-4" style="font-family: Merriweather;">
+			<p>Hora actual:</p><p id="hora" ></p></div>
+
+
+	</div>
+</div>	
+
+
+<!--Botón top-->
+<span class="ir-arriba" title="Presionar botón para volver arriba de la página.">^</span>
+<!--Fin botón top-->
+
+<div class="" style="background-color: #222;">
+<div class="contenedor contactodiv" style="margin-bottom: 40px; ">
+	<div class="centro">
+		<div class="col-md-1"></div>
+
+		<div class="col-md-10">
+			  <p style="text-align: center; font-size: 18px;">_____________________________________</p>	  
+			  <h1 style="text-align: center; font-family: Merriweather; color:#4CAF80;">Márquez Coffee</h1>
+			  <br><h3 style="text-align: center; font-family: Merriweather; color:#4CAF80;">¡El café que rinde más!.</h3>			  
+			  <br><div style="font-family: Merriweather; font-size: 20px; text-align: center; margin-top: 10px; color:#4CAF80;"><i class="fas fa-home fa-1x" ></i> De lunes a viernes de 8AM a 4PM</div>		  
+			  <br><div style="font-family: Merriweather; font-size: 20px; text-align: center; margin-top: 10px; color:#4CAF80;"><i class="fas fa-phone fa-1x" ></i> Teléfono: +504 9951-1132</div>		
+			  <br><div style="font-family: Merriweather; font-size: 20px; text-align: center; margin-top: 10px; color:#4CAF80;"><i class="fas fa-envelope fa-1x" ></i> Correo electrónico: marquezCoffee@gmail.com</div>
+			  <br><div style="font-family: Merriweather; font-size: 20px; text-align: center; margin-top: 10px; color:#4CAF80;"><i class="fas fa-map-marker fa-1x" ></i> Ubicación: Siguatepeque, Comayagua, Honduras.</div>		
+			  <p style="text-align: center; font-size: 18px;">_____________________________________</p>  
+				<!--Fin col-md-12-->
+			</div>
+
+			<div class="col-md-1"></div>
+			
+		</div>
+	</div>
+	</div>
+
+<!-- Se muestra en una pequeña galeria en la cual se ven las cualidades de la empresa -->
+	
+<div class="contenedor" style="margin-top: 80px; text-align: center;">
+	<h1 style="text-align: center; font-family: Merriweather; margin-bottom: 20px;">Nuestras cualidades</h1>
+	<div class="centro">
+		<div class="col-md-3 col-sm-4 col-xs-6"><img id="img2" class="img-responsive" src="img/GaleriaIndex/Iso.jpg" /><h5>Certificado de calidad.</h5></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img id="img2" class="img-responsive" src="img/GaleriaIndex/CH.jpg" /><h5>Alianzas.</h5></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img id="img2" class="img-responsive" src="img/GaleriaIndex/Cafe (5).jpg" /><h5>Café.</h5></div>
+        <div class="col-md-3 col-sm-4 col-xs-6" ><img id="img2" class="img-responsive" src="img/GaleriaIndex/Cafe (1).jpg" /><h5>Café de calidad.</h5></div>
+    </div>
+</div>
+
+<div class="contenedor" style="margin-top: 40px; text-align: center;">
+	<div class="centro">
+    	<div class="col-md-3 col-sm-4 col-xs-6"><img id="img2" class="img-responsive" src="img/GaleriaIndex/Cafe (2).jpg" /><h5>Distribuidores.</h5></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img id="img2" class="img-responsive" src="img/GaleriaIndex/Cafe (3).jpg" /><h5>Exportación de café.</h5></div>
+	    <div class="col-md-3 col-sm-4 col-xs-6"><img id="img2" class="img-responsive" src="img/GaleriaIndex/Cafe (4).jpg" /><h5>Bolsas de café.</h5></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img id="img2" class="img-responsive" src="img/GaleriaIndex/maletin.jpg" /><h5>Vendedores.</h5></div>
+    </div>
+</div>
+
+<!-- Formulario de contacto para que la empresa pueda saber que opinan los clientes -->
+<section id="contact" class="content-section text-center" style="margin-top: 90px;">
+  <div class="contact-section">
+    <div class="contenedor">
+			<h2 style="text-align: center; color:black; padding-top: 45px;">Contáctanos</h2>
+			<br>
+      <p style="text-align: center; color:black;">Para mayor información envianos un mensaje a nuestro correo, y uno de nuestros empleados se pondra en contacto con tigo.</p>
+        <div class="centro">
+          <div class="col-md-5" > 
+     				<br>
+     				<br>
+  					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30888.15789096925!2d-87.85350340821192!3d14.597951247452597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6595a3b6d8afe3%3A0x3dab665e36cbd548!2sSiguatepeque!5e0!3m2!1ses!2shn!4v1553973709002!5m2!1ses!2shn" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+          <div class="col-md-7 col-md-offset-2">
+            <form class="formulario-horizontal" action="">
+              <div class="formulario-grupo">
+                  <label for="exampleInputName2">Nombre</label>
+                  <input type="text" class="formulario-control" id="exampleInputName2" placeholder="Nombre">
+              </div>
+              <div class="formulario-grupo">
+                  <label for="exampleInputEmail2">Correo electrónico</label>
+                  <input type="email" class="formulario-control" id="exampleInputEmail2" placeholder="nombre@example.com">
+              </div>
+              <div class="formulario-grupo ">
+                <label for="exampleInputText">Tu mensaje</label>
+                <textarea  class="formulario-control" placeholder="Descripción"></textarea> 
+              </div>
+							<div class="centro">
+								<div class="col-md-7">
+									
+									<a href=”mailto:marquezCoffee@gmail.com” ><button type="submit" class="leer">Enviar mensaje</button></a>
+								</div>
+							</div>   
+            </form>  
+          </div>
+        </div>
+		</div>
+	</div>
+</section>
+
+
+	<!--Inicio footer-->
+	<footer>
+			<div class="footer" id="footer">
+							<div class="contenedor">
+								 <div class="centro">
+				
+									<div class="col-lg-3 col-xs-12">
+										 <a href="index.html" title="Ir a página principal."><span class="logo"><img src="img/Marca-de-café.png" width="200" height="200"></span></a>
+									</div>
+									<div class="col-lg-3 col-xs-12">
+										 <h3>MENÚ</h3>
+											<ul>
+													<li><a title="Ir a inicio." href="index.html" title="Ir a inicio.">Inicio</a></li>
+													<li><a href="#"  title="Ir a misión y visión.">Misión-Visión</a></li>
+													<li><a href="QuienesSomos.html"  title="">Sobre nosotros</a></li>
+													<li><a href="#" title="Ir a contactos.">Contacto</a></li>
+											</ul>
+									</div>
+					<div class="col-lg-3 col-xs-12">
+											<h3>CATEGORÍAS  </h3>
+											<ul>
+													 <li><a href="Galeria.html" title="Ir a la galería.">Gallería</a></li>
+													<li><a href="Calidad.html" title="Ir a calidad">Café de calidad</a></li>
+							<li><a href="#" target="blank" title="">Noticias</a></li>
+							<li><a href="https://es.informationvine.com/index?qsrc=999&qo=semQuery&ad=semD&o=614711&l=sem&askid=6c8220ef-e2d4-498f-b3a8-afc9d9ad06ab-0-ie_gsb&q=compra%20venta%20de%20cafe&dqi=&am=broad&an=google_s" target="blank" title="">Anuncios</a></li>
+											</ul>
+									</div>
+									<div class="col-lg-3 col-xs-12">
+											<h3>CONTACTO</h3>
+											<ul>
+													<li> <a href="Tierras.html" title="">Terrenos</a> </li>
+													<li> <a title="">Teléfono: +504 2773-5000</a> </li>
+													<li> <a href="Porque.html"  title="">¿Porqué?</a> </li>
+													<li> <a title="">E-Mail: marquezCoffee@gmail.com</a> </li>
+													<li> <a href="Desarrollador.html"title="Ir a desarrollador.">Desarrollador</a> </li>
+											</ul>
+									</div>
+							 </div>
+						</div>
+					</div>
+	
+						<div class="col-lg-12" style="background-color: #222;">
+							<a href="https://www.facebook.com/" target="blank" title="Ir a facebook." class="fab fa-facebook-f"  style="background-color: #222;"></a>
+							<a href="https://twitter.com/?lang=es" target="blank" title="Ir a twitter." class="fab fa-twitter" style="background-color: #222;"></a>
+							<a href="https://www.google.com/gmail" target="blank" title="Ir a gmail." class="fab fa-google" style="background-color: #222;"></a>
+							<a href="https://wwww.youtube.com" target="blank" title="Ir a youtube." class="fab fa-youtube" style="background-color: #222;"></a>
+							<a href="https://www.instagram.com/" target="_blank" title="Ir a instagram." class="fab fa-instagram" style="background-color: #222;"></a>
+							<a href="https://www.skype.com/es/" target="blank" title="Ir a skype." class="fab fa-skype" style="background-color: #222;"></a>
+					
+						</div>
+		</footer>
+		<!--Fin footer-->
+		<div class="footer-bottom">
+				<p>Copyright © 2019. Todos los Derechos Reservados.</p>
+		</div>
+		
+	
+	<!--SCRIPTS-->
+
+	<!-- <script src="js/slide.js"></script> -->
+	<script src="js/bienvenido.js"></script>
+	<script src="js/hora.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!--Cuando no ha cargado la página.-->
+	<script>
+		window.onload = function(){
+			var contenedor = document.getElementById('contenedor_carga');
+			contenedor.style.visibility = 'hidden';
+			contenedor.style.opacity = '0';
+		}
+
+
+		///Función del botón top
+		$(document).ready(function(){
+		 
+			$('.ir-arriba').click(function(){
+				$('body, html').animate({
+					scrollTop: '0px'
+				}, 400);
+			});
+		 
+			$(window).scroll(function(){
+				if( $(this).scrollTop() > 0 ){
+					$('.ir-arriba').slideDown(400);
+				} else {
+					$('.ir-arriba').slideUp(400);
+				}
+			});
+		 
+		});
+		///Fin función botón top.
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Márquez Coffee</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="css/carga.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--Icono de la pestaña-->
+	<link rel="icon" href="img/Marca-de-café.png">
+	<!--Fuente de google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<!--Iconos-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	
+
+
+</head>
+<body style="background-color: #f1f1f1;">
+
+<!--Aniamción inicial-->
+<div id="contenedor_carga">
+		<div id="carga">
+			
+		</div>
+</div>
+<!--Fin Aniamción inicial-->	
+
+
+<div class="header">
+  <div class="contenedor">
+  	<div class="centro">
+  		<div class="col-md-12">
+  			  <p><img src="img/cenicafe2.jpg" alt="Nature" class="responsive"></p>
+  		</div>
+  	</div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<nav id="navbar" class="navbar barra-expandir bg">
+	<a class="barra-marca" title="cafe.com" href="index.html" ><img src="img/Marca-de-café.png" width="44" height="44"></a>
+<button class="barra-palanca" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="barra-palanca-icon"></span>
+</button>
+
+<div class="collapse navegacion-colapso" id="navbarSupportedContent">
+	<ul class="barra-navegacion mr-auto">
+		<li>
+			<a class="link-navegacion" href="QuienesSomos.html">¿Quiénes somos?</a>
+		</li>
+		<li>
+			<a class="link-navegacion" href="Productos.html">Productos</a>
+		</li>
+		
+		<li>
+			<a class="link-navegacion" href="Distribuidor.html">Distribuidor</a>
+		</li>
+		<li>
+			<a class="link-navegacion" href="Reservacion.html">Reservaciones</a>
+		</li>
+
+		<li>
+			<a class="link-navegacion" href="Galeria.html">Galeria</a>
+		</li>
+	<li>
+			<a class="link-navegacion" href="Clientes.html">Clientes</a>
+		</li>
+		<li>
+			<a class="link-navegacion" href="404.html">Login</a>
+		</li>
+	</ul>
+	
+</div>
+</nav>
+
+<!--Fin barra-->
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="contenedor">
+    <h1 style="text-align: center;" class="display-4">Encargos de café</h1>
+		<p style="text-align: center;" class="lead">Realice sus pedidos aquí.</p>
+		<br>
+		<h2 style="text-align:center">Registro de Usuarios</h2>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!--Botón top-->
+<span class="ir-arriba" title="Presionar botón para volver arriba de la página.">^</span>
+<!--Fin botón top-->
+
+
+
+
+
+	<!-- Controla el acceso al menú cliente-->
+	<div class="contenedor" style="padding-top: 60px;">
+    	<div class="centro">
+	        <div class="col-md-12">
+	
+	            <div class="bg-content">
+
+					<div class="centro">
+						<div class="col-md-3"></div>
+						
+
+						<div class="col-md-6">
+							
+				<form action="MenuCliente.html" name="form" >
+	                <div class="input-group">
+	                  <input id="txtnombre" name ="txtnombre" type="text" class="formulario-control" placeholder="Nombre" aria-describedby="basic-addon1">
+									</div>
+									<div class="input-group"style="margin-top: 10px" >
+											<input id="txttelefono" name ="txttelefono" type="text" class="formulario-control" placeholder="Telefono" aria-describedby="basic-addon1">
+									</div>
+	                
+	                <div class="input-group" style="margin-top: 10px">
+	                  <input id="txtcorreo" name="txtcorreo" type="email" class="formulario-control" placeholder="usuario@email.com" aria-describedby="basic-addon1">
+									</div>
+									<div class="input-group"style="margin-top: 10px">
+											<label for="bolsa_dia"><h3>Bolsas de cafe deseadas:</h3></label>
+											<input type="number" min="0" id="bolsa" size="3" name="bolsaPrecio" placeholder="0" class="formulario-control">
+											<input type="hidden" value="60" name="bolsaLibra">
+									</div>
+									<div class="input-group"style="margin-top: 10px">
+											<label for="pase_dia" style="text-align:center"><h3>Tipo de Cafe:</h3></label>
+											<!-- <label for="regalo">Seleccione un regalo</label> <br> -->
+                        <select id="tipo" name="tipo" required class="formulario-control">
+                                        <option value="">- Seleccione el tipo de café --</option>
+                                        <option value="1">En polvo</option>
+                                        <option value="2">Grano</option>
+                                        <option value="3">Oro</option>
+																		</select>
+													</div>					
+						
+						<div class="col-md-3"></div>
+					
+
+	                <div class="centro">
+	                	<div class="col-md-4">
+	                		
+	                	</div>
+	                	
+	                	<div class="col-md-4">
+	                		<input id="calcular" type="button" value="CALCULAR" class="leer">
+	                  			<!-- <center><button onclick="go()"  name="btnLogin" class="leer" style="margin-top: 40px;">Login</button></center>  -->
+	                  			<!-- <center><p style="padding-top: 10px;">Sí no tienes una cuenta, pues </p><a  href="RegistroCliente.php"><p >Registrarse</p></a></center> -->
+	                		
+	                	</div>
+	                	<div class="col-md-4">
+	                		
+										</div>
+	                </div>
+	                </form>
+
+						
+							<div class="centro">
+								<div class="col-md-6"></div>						
+								<div class="col-md-4"style="padding-top: 60px;">
+									
+												<h3>Resumen:</h3>
+												<div id="nombreCliente">
+
+												</div>
+												<br>
+											<div id="lista-cafe">
+												</div>
+												<br>
+												<p>Total:</p>
+												<div id="suma-total">
+		
+												</div>
+												<input type="hidden" name="total_pedido" id="total_pedido">
+												<input type="hidden" name="total_descuento" id="total_descuento" value="total_descuento">
+												<input id="btnRegistro" type="submit" name="submit" class="leer" value="Pagar">
+										
+								</div>
+							</div>
+
+	                </div>
+	                
+	            </div>
+					</div>
+					</div>
+					
+        </div>
+    </div>
+
+
+
+	
+	<!--Inicio footer-->
+	<footer>
+			<div class="footer" id="footer">
+							<div class="contenedor">
+								 <div class="centro">
+				
+									<div class="col-lg-3 col-xs-12">
+										 <a href="index.html" title="Ir a página principal."><span class="logo"><img src="img/Marca-de-café.png" width="200" height="200"></span></a>
+									</div>
+									<div class="col-lg-3 col-xs-12">
+										 <h3>MENÚ</h3>
+											<ul>
+													<li><a title="Ir a inicio." href="index.html" title="Ir a inicio.">Inicio</a></li>
+													<li><a href="#"  title="Ir a misión y visión.">Misión-Visión</a></li>
+													<li><a href="QuienesSomos.html"  title="">Sobre nosotros</a></li>
+													<li><a href="#" title="Ir a contactos.">Contacto</a></li>
+											</ul>
+									</div>
+					<div class="col-lg-3 col-xs-12">
+											<h3>CATEGORÍAS  </h3>
+											<ul>
+													 <li><a href="Galeria.html" title="Ir a la galería.">Gallería</a></li>
+													<li><a href="Calidad.html" title="Ir a calidad">Café de calidad</a></li>
+							<li><a href="#" target="blank" title="">Noticias</a></li>
+							<li><a href="https://es.informationvine.com/index?qsrc=999&qo=semQuery&ad=semD&o=614711&l=sem&askid=6c8220ef-e2d4-498f-b3a8-afc9d9ad06ab-0-ie_gsb&q=compra%20venta%20de%20cafe&dqi=&am=broad&an=google_s" target="blank" title="">Anuncios</a></li>
+											</ul>
+									</div>
+									<div class="col-lg-3 col-xs-12">
+											<h3>CONTACTO</h3>
+											<ul>
+													<li> <a href="Tierras.html" title="">Terrenos</a> </li>
+													<li> <a title="">Teléfono: +504 2773-5000</a> </li>
+													<li> <a href="Porque.html"  title="">¿Porqué?</a> </li>
+													<li> <a title="">E-Mail: marquezCoffee@gmail.com</a> </li>
+													<li> <a href="Desarrollador.html"title="Ir a desarrollador.">Desarrollador</a> </li>
+											</ul>
+									</div>
+							 </div>
+						</div>
+					</div>
+	
+						<div class="col-lg-12" style="background-color: #222;">
+							<a href="https://www.facebook.com/" target="blank" title="Ir a facebook." class="fab fa-facebook-f"  style="background-color: #222;"></a>
+							<a href="https://twitter.com/?lang=es" target="blank" title="Ir a twitter." class="fab fa-twitter" style="background-color: #222;"></a>
+							<a href="https://www.google.com/gmail" target="blank" title="Ir a gmail." class="fab fa-google" style="background-color: #222;"></a>
+							<a href="https://wwww.youtube.com" target="blank" title="Ir a youtube." class="fab fa-youtube" style="background-color: #222;"></a>
+							<a href="https://www.instagram.com/" target="_blank" title="Ir a instagram." class="fab fa-instagram" style="background-color: #222;"></a>
+							<a href="https://www.skype.com/es/" target="blank" title="Ir a skype." class="fab fa-skype" style="background-color: #222;"></a>
+					
+						</div>
+		</footer>
+		<!--Fin footer-->
+		<div class="footer-bottom">
+				<p>Copyright © 2019. Todos los Derechos Reservados.</p>
+		</div>
+		
+
+	
+	<!--SCRIPTS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	
+  <script src="js/cotizador.js"></script>
+
+
+	
+	<script>
+		window.onload = function(){
+			var contenedor = document.getElementById('contenedor_carga');
+
+			contenedor.style.visibility = 'hidden';
+			contenedor.style.opacity = '0';
+		}
+
+
+		///Función del botón top
+				$(document).ready(function(){
+				 
+					$('.ir-arriba').click(function(){
+						$('body, html').animate({
+							scrollTop: '0px'
+						}, 400);
+					});
+				 
+					$(window).scroll(function(){
+						if( $(this).scrollTop() > 0 ){
+							$('.ir-arriba').slideDown(400);
+						} else {
+							$('.ir-arriba').slideUp(400);
+						}
+					});
+				 
+				});
+				///Fin función botón top.
+	</script>
+
+
+	
+</body>
+</html>

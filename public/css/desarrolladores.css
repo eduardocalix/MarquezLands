@@ -1,0 +1,255 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  display: block;
+
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.tarjeta {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.contenedor {
+  padding: 0 16px;
+}
+
+.contenedor::after, .centro::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white!important;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+  box-shadow: 2px 2px 5px #999;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.centro {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.centro,
+.centro > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after centros */ 
+.centro:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Contenido */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Diseño responsive: crea un diseño de dos columnas en lugar de cuatro columnas*/
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive hace que las dos columnas se apilen una sobre la otra en lugar de una junto a la otra */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#team {
+  background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #108d6f;
+  border-color: #108d6f;
+  box-shadow: none;
+  outline: none;
+
+}
+
+.btn-primary {
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  background-color: #007b5e;
+  border-color: #007b5e;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#team .tarjeta {
+  border: none;
+  background: #ffffff;
+}
+
+.image-flip:hover .parteAtras,
+.image-flip.hover .parteAtras {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: .25rem;
+}
+
+.image-flip:hover .parteAdelante,
+.image-flip.hover .parteAdelante {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.Lado {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  /* -moz-transform: perspective(1000px); */
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.parteAdelante {
+  position: relative;
+  /* -webkit-transform: rotateY(0deg); */
+  /* -ms-transform: rotateY(0deg); */
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.parteAtras {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  background: white;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.parteAdelante,
+.parteAtras {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.parteAdelante .tarjeta,
+.parteAtras .tarjeta {
+  min-height: 312px;
+}
+
+.parteAtras .tarjeta a {
+  font-size: 18px;
+  color: #007b5e !important;
+}
+
+.parteAdelante .tarjeta .tarjeta-title,
+.parteAtras .tarjeta .tarjeta-title {
+  color: #007b5e !important;
+}
+
+.parteAdelante .tarjeta .tarjeta-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+
+
+
